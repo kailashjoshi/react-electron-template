@@ -1,10 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import LOG from "./logger";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      {LOG.info("App Loaded")}
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
